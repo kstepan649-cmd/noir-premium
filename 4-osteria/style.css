@@ -89,3 +89,7 @@ html,body{font-family:Arial,Helvetica,sans-serif}
 .hero h1{font-size:clamp(54px,6vw,82px);line-height:1.02}
 .story h2,.menu h2{line-height:1.03}.dish h3{font-size:19px}
 .booking input,.booking select,.booking button{font-family:Arial,Helvetica,sans-serif}
+
+/* Display type: Italian menu editorial */
+:root{--serif:"Palatino Linotype","Book Antiqua",Georgia,serif}
+.logo,.hero h1,.story h2,.menu h2,.dish h3,.booking h2,.story-side{font-family:"Palatino Linotype","Book Antiqua",Georgia,serif}
