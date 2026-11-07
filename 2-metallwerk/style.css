@@ -70,3 +70,23 @@ html,body{font-family:Tahoma,Arial,sans-serif}
 /* Display type: clean technical sans */
 .hero h1,.section-head h2,.service-copy h2,.contact h2{font-family:"Segoe UI",Tahoma,Arial,sans-serif;font-weight:600;letter-spacing:-1.5px;text-transform:none;line-height:1.02}
 .product-row h3,.service-steps b{font-family:"Segoe UI",Tahoma,Arial,sans-serif;font-weight:600}
+
+/* Machine register — technical rows, not product cards */
+.product-list{border:0;border-top:1px solid #3d5666;background:transparent}
+.product-row{grid-template-columns:48px minmax(160px,1.1fr) minmax(250px,2fr) 145px;gap:20px;padding:25px 6px;border-bottom:1px solid #3d5666;background:transparent!important}
+.product-row:nth-child(even){background:transparent!important}
+.product-row:before{display:none}
+.product-row:hover{background:#172b3a!important}
+.product-no{color:#ff935c;font:11px Consolas,"Courier New",monospace}
+.product-row dl{border-left:1px solid #3b5668}
+.product-row .text-button{white-space:nowrap}
+@media(max-width:900px){
+ .product-row{grid-template-columns:34px minmax(0,1fr) 135px}
+ .product-row dl{grid-column:2/-1;border-left:0;border-top:1px solid #3b5668;padding-top:12px}
+ .product-row .text-button{grid-column:3;grid-row:1}
+}
+@media(max-width:600px){
+ .product-row{grid-template-columns:24px minmax(0,1fr);padding:19px 3px;gap:9px}
+ .product-row dl{grid-column:2;flex-wrap:wrap;padding-top:9px}
+ .product-row .text-button{grid-column:2;grid-row:auto;text-align:left;justify-self:start}
+}
