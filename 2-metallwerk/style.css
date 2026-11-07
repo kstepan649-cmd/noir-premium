@@ -56,3 +56,13 @@ html,body{background:#101d29;color:#e5edf2;font-family:Consolas,"Courier New",mo
 
 @media(max-width:900px){html,body{width:100%;max-width:100%;overflow-x:hidden}.hero,.hero-copy,.hero-photo,.section,.section-head,.service,.contact,.contact form{min-width:0;max-width:100%}.intro,.intro-strip p,.section-note,.product-row p,.service-copy p,.contact-text{overflow-wrap:anywhere}}
 @media(max-width:600px){.header{width:100%;min-width:0}.header nav{flex-wrap:wrap;min-width:0}.header-link{white-space:nowrap;font-size:9px}.hero{width:100%;max-width:100%;min-width:0}.hero-copy{width:100%;min-width:0}.hero h1{font-size:clamp(43px,11.5vw,54px);letter-spacing:-1.8px;overflow-wrap:normal}.intro{max-width:100%;font-size:11px;overflow-wrap:anywhere}.hero-photo{width:100%;min-width:0}.intro-strip div{min-width:0}.intro-strip strong{font-size:20px}.product-row{min-width:0}.product-row h3{overflow-wrap:anywhere}.product-row dl{min-width:0}.product-row dl div{min-width:0}.contact form,.contact label{min-width:0}.contact input,.contact textarea,.contact select{min-width:0;width:100%}}
+
+/* Type refinement: engineering editorial, without condensed display fonts */
+:root{--display:Georgia,"Times New Roman",serif}
+html,body{font-family:Tahoma,Arial,sans-serif}
+.wordmark{font:700 20px Arial,Helvetica,sans-serif;letter-spacing:1.5px}
+.header nav,.header-link,.kicker,.hero-note,.hero-photo figcaption,.side-index,.product-row dt,.product-row dd,.filters .filter,.service-label,.footer{font-family:Consolas,"Courier New",monospace}
+.hero h1,.section-head h2,.service-copy h2,.contact h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.7px;text-transform:none;line-height:1.02}
+.intro{font-family:Tahoma,Arial,sans-serif;font-size:15px;line-height:1.8}
+.product-row h3,.service-steps b{font-family:Arial,Helvetica,sans-serif;font-weight:600;letter-spacing:0}
+.button,.filter,.text-button,.contact label,.contact input,.contact select,.contact textarea{font-family:Arial,Helvetica,sans-serif}
