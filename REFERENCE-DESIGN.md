@@ -19,3 +19,8 @@ This repository contains six independent static front-end recreations based on t
 - Each page intentionally preserves the source site's distinct information architecture instead of forcing a common hero/cards/pricing layout.
 - Interactive elements are front-end demonstrations. Form submissions, account flows, payments, reservations, shopping checkout and CRM delivery require the relevant production backend or third-party provider.
 - Third-party image hosts and fonts are loaded over HTTPS; availability can depend on those services.
+
+
+## Presentation rule
+
+Do not use decorative numeric labels such as `01`, `02`, `03` for sections, steps, cards, tabs, or eyebrow headings. Use plain descriptive labels or headings instead. Keep meaningful numbers such as years, prices, specifications, addresses, and contact details unchanged.
