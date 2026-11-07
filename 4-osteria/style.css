@@ -79,3 +79,13 @@ body{font-family:"Segoe UI",Arial,sans-serif}
  .logo{grid-column:1;min-width:0}
  .reserve{grid-column:2;flex:0 0 auto;width:auto;min-width:max-content;max-width:none;justify-self:end}
 }
+
+/* Type refinement: trattoria menu typography */
+:root{--serif:Georgia,"Times New Roman",serif}
+html,body{font-family:Arial,Helvetica,sans-serif}
+.logo{font:600 20px Georgia,"Times New Roman",serif;letter-spacing:.25px}
+.logo small,.header nav,.reserve,.eyebrow,.hero-address,.hero-photo figcaption,.story-label,.menu-foot,.booking label,footer{font-family:Arial,Helvetica,sans-serif}
+.hero h1,.story h2,.menu h2,.dish h3,.booking h2,.story-side{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.4px;text-transform:none}
+.hero h1{font-size:clamp(54px,6vw,82px);line-height:1.02}
+.story h2,.menu h2{line-height:1.03}.dish h3{font-size:19px}
+.booking input,.booking select,.booking button{font-family:Arial,Helvetica,sans-serif}
