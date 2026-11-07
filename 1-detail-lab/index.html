@@ -1,4 +1,4 @@
-[Reading 427 lines from start (total: 427 lines, 0 remaining)]
+[Reading 423 lines from start (total: 423 lines, 0 remaining)]
 
 <!doctype html>
 <html lang="ru">
@@ -328,6 +328,16 @@ body{font-family:Arial,Helvetica,sans-serif}
 @media(prefers-reduced-motion:reduce){.visual:before{animation:none}.service,.service.reveal{opacity:1;transform:none;transition:none}}
 
 </style>
+<style id="detail-mobile-fixes">
+@media(max-width:500px){
+ .nav{gap:8px;grid-template-columns:minmax(0,1fr) 104px}
+ .brand{font-size:18px;white-space:nowrap}
+ .nav .btn{display:none}
+ .phone,.links{display:none}
+ .lead{max-width:100%;width:100%;overflow-wrap:anywhere}
+}
+@media(prefers-reduced-motion:reduce){.hero-video{display:none!important}}
+</style>
 </head>
 <body>
 <header class="top"><div class="wrap nav"><a class="brand" href="#top" aria-label="DETAIL LAB — наверх">DETAIL<span> / </span>LAB</a><nav class="links" aria-label="Основная навигация"><a href="#services">Услуги</a><a href="#works">Работы</a><a href="#gallery">Галерея</a><a href="#process">Как работаем</a><a href="#contact">Контакты</a></nav><span class="phone">Демонстрационный проект</span><a class="btn" href="#contact">Записаться</a></div></header>
@@ -413,17 +423,3 @@ if(!reduceMotion){
 
 </script>
 </body></html>
-<style>
-@media(max-width:500px){
- .nav{gap:8px}.brand{font-size:18px;white-space:nowrap}
- .nav .btn{padding:10px 8px;font-size:8px;letter-spacing:.4px;white-space:nowrap}
- .lead{max-width:100%;width:100%;overflow-wrap:anywhere}
-}
-.reveal,.reveal.is-visible,.service.reveal{opacity:1;transform:none}
-@media(prefers-reduced-motion:reduce){.hero-video{display:none!important}}
-</style>
-<style>
-@media(max-width:500px){.nav{display:grid;grid-template-columns:minmax(0,1fr) 104px;gap:8px}.nav .brand{grid-column:1}.nav .btn{grid-column:2;width:104px;max-width:104px;padding:9px 6px;font-size:8px;text-align:center}.phone{display:none}.links{display:none}}
-@media(prefers-reduced-motion:reduce){.hero-video{display:none!important}}
-</style>
-<style>@media(max-width:500px){.nav .btn{display:none}}</style>

@@ -2,9 +2,9 @@
 
 # Hero video sources
 
-All five demonstration sites use separate muted, looping hero videos from the Pexels CDN. The video files are streamed from Pexels and are not copied into the repository. Each page keeps its original local JPG hero image as a poster/fallback. Videos are disabled for visitors who enable reduced motion.
+The five demonstration sites use different muted, looping hero clips streamed from the Pexels CDN. The repository keeps local JPG poster images as a fallback.
 
-| Site | Source |
+| Site | Direct video source |
 |---|---|
 | DETAIL / LAB | https://videos.pexels.com/video-files/6159290/6159290-hd_1920_1080_30fps.mp4 |
 | METALLWERK | https://videos.pexels.com/video-files/18883366/18883366-hd_1920_1080_50fps.mp4 |
@@ -12,4 +12,4 @@ All five demonstration sites use separate muted, looping hero videos from the Pe
 | OSTERIA LUCE | https://videos.pexels.com/video-files/6222573/6222573-uhd_3840_2160_24fps.mp4 |
 | PULITO | https://videos.pexels.com/video-files/4145661/4145661-uhd_3840_2160_25fps.mp4 |
 
-Playback depends on browser support, network conditions and availability of the external video CDN.
+All hero videos are muted, looped and inline. Visitors who request reduced motion see the static poster instead. Video playback depends on the browser and the availability of the external CDN.
