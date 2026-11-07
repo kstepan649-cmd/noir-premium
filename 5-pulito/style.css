@@ -89,3 +89,31 @@ html,body{font-family:Arial,Helvetica,sans-serif}
 /* Keep the longer home-service headline balanced at desktop and mobile widths. */
 .hero h1{font-size:clamp(44px,4.7vw,68px);letter-spacing:-1.4px}
 @media(max-width:600px){.hero h1{font-size:clamp(40px,10.6vw,49px);letter-spacing:-1.2px}}
+
+/* Service band — typographic service index without individual tiles */
+.service-line{display:flex;align-items:stretch;justify-content:space-between;gap:0;background:#2468d8;color:#fff;padding:0 7vw}
+.service-line div{flex:1;display:grid;grid-template-columns:28px minmax(0,1fr);gap:4px 12px;align-content:center;min-height:92px;padding:17px 22px 17px 0;margin-right:22px;border:0;border-right:1px solid rgba(255,255,255,.28);background:transparent}
+.service-line div:last-child{border-right:0;margin-right:0}
+.service-line span{grid-row:1/3;color:#d7f36a;font:12px Arial,Helvetica,sans-serif}
+.service-line b{font-size:13px;font-weight:700}
+.service-line small{font-size:10px;color:#dceaff}
+.how-list{display:block;border-top:1px solid #c8dced}
+.how-list article{display:grid;grid-template-columns:54px minmax(0,1fr);gap:15px;align-items:start;padding:21px 0;background:transparent;border:0;border-bottom:1px solid #c8dced;border-radius:0}
+.how-list article>span{width:auto;height:auto;border-radius:0;background:transparent;color:#2468d8;font:italic 22px Georgia,"Times New Roman",serif;display:block;place-items:initial}
+.how-list h3{font:600 16px Arial,Helvetica,sans-serif;color:#173859;margin:0 0 6px}
+.how-list p{font:12px/1.65 Arial,Helvetica,sans-serif;color:#667c90;margin:0;max-width:440px}
+.estimate form{background:transparent;border:0;border-top:1px solid #c0d8eb;border-bottom:1px solid #c0d8eb;border-radius:0;padding:26px 0;box-shadow:none}
+@media(max-width:900px){
+ .service-line{display:grid;grid-template-columns:1fr 1fr;padding:0 7vw}
+ .service-line div{min-height:78px;margin:0;padding:16px 12px 16px 0}
+ .service-line div:nth-child(2){border-right:0}
+ .service-line div:last-child{grid-column:1/-1;border-top:1px solid rgba(255,255,255,.28);padding-left:0}
+}
+@media(max-width:600px){
+ .service-line{grid-template-columns:1fr;padding:0 7vw}
+ .service-line div,.service-line div:nth-child(2),.service-line div:last-child{grid-column:auto;min-height:0;padding:16px 0;margin:0;border-right:0;border-bottom:1px solid rgba(255,255,255,.28);border-top:0}
+ .service-line div:last-child{border-bottom:0}
+ .how-list article{grid-template-columns:38px minmax(0,1fr);padding:18px 0}
+ .how-list article>span{font-size:20px}
+ .estimate form{padding:23px 0}
+}
