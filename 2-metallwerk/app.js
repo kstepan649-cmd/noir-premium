@@ -1,3 +1,5 @@
+[Reading 24 lines from start (total: 24 lines, 0 remaining)]
+
 const filters = [...document.querySelectorAll('.filter')];
 const products = [...document.querySelectorAll('.product-row')];
 filters.forEach((button) => {
@@ -6,6 +8,7 @@ filters.forEach((button) => {
     const key = button.dataset.filter;
     products.forEach((row) => {
       row.hidden = key !== 'all' && row.dataset.kind !== key;
+      if (!row.hidden) { row.classList.remove('filter-arrive'); void row.offsetWidth; row.classList.add('filter-arrive'); }
     });
   });
 });

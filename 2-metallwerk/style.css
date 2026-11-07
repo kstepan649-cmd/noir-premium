@@ -1,3 +1,5 @@
+[Reading 159 lines from start (total: 159 lines, 0 remaining)]
+
 :root{--paper:#e8e7e1;--ink:#1b2021;--muted:#687173;--line:#c7c9c3;--orange:#c85b34;--white:#f8f8f4;--display:'Bahnschrift','Arial Narrow',Arial,sans-serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.header{height:78px;padding:0 5vw;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--line)}.wordmark{font:700 19px var(--display);letter-spacing:-.7px}.wordmark span{font:500 10px Arial;letter-spacing:1px;color:var(--muted);margin-left:7px}.header nav{display:flex;gap:34px;font-size:13px}.header nav a:hover,.header-link:hover{color:var(--orange)}.header-link{font-size:13px;font-weight:700}.header-link span{color:var(--orange);margin-left:8px}
 .hero{padding:56px 5vw 42px;display:grid;grid-template-columns:1fr 1.05fr;gap:5vw;min-height:570px;position:relative}.hero-copy{padding:24px 0 0 3vw}.kicker{font-family:Consolas,monospace;font-size:10px;letter-spacing:1.7px;color:var(--orange);font-weight:800;margin:0 0 22px}.hero h1{font:600 clamp(48px,6.2vw,86px)/.96 var(--display);letter-spacing:-5px;margin:0 0 27px}.hero h1 em,.section-head h2 em{font-style:normal;color:var(--orange)}.intro{max-width:430px;font-size:15px;line-height:1.75;color:#535c5d}.button{display:inline-flex;gap:24px;align-items:center;background:var(--ink);color:white;padding:16px 20px;margin-top:15px;border:0;cursor:pointer;font-size:13px;font-weight:700;transition:background .18s,transform .18s}.button:hover{background:var(--orange);transform:translateY(-2px)}.hero-note{margin-top:55px;border-top:1px solid var(--line);padding-top:15px;font-size:12px;color:var(--muted)}.hero-note span{font:600 12px var(--display);color:var(--orange);margin-right:16px}.hero-photo{margin:0;position:relative;min-height:490px;background:#252c2c;overflow:hidden}.hero-photo img{width:100%;height:100%;position:absolute;object-fit:cover;inset:0;filter:saturate(.75)}.hero-photo figcaption{position:absolute;bottom:0;left:0;right:0;background:#151a1bdc;color:white;padding:14px 18px;display:flex;justify-content:space-between;font-size:9px;letter-spacing:1.4px}.side-index{position:absolute;right:1.3vw;top:53%;writing-mode:vertical-rl;font-size:9px;letter-spacing:2px;color:#7b8585}
@@ -90,3 +92,70 @@ html,body{font-family:Tahoma,Arial,sans-serif}
  .product-row dl{grid-column:2;flex-wrap:wrap;padding-top:9px}
  .product-row .text-button{grid-column:2;grid-row:auto;text-align:left;justify-self:start}
 }
+
+/* METALLWERK — machine register / mono technical type */
+body{font-family:Consolas,"Courier New",monospace}
+.wordmark,.hero h1,.section-head h2,.service-copy h2,.contact h2,.product-row h3{font-family:Bahnschrift,"Arial Narrow",Arial,sans-serif}
+.hero{position:relative;isolation:isolate;background-color:#142533;background-image:linear-gradient(rgba(110,151,174,.075) 1px,transparent 1px),linear-gradient(90deg,rgba(110,151,174,.075) 1px,transparent 1px);background-size:28px 28px}
+.hero-photo{position:relative;isolation:isolate}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;filter:brightness(.78) contrast(1.2) saturate(.65)}
+.hero-photo:after{content:"";position:absolute;inset:0;z-index:2;background:linear-gradient(0deg,rgba(6,13,18,.75),transparent 60%);pointer-events:none}
+.hero-photo figcaption{z-index:3}
+.hero:after{content:"";position:absolute;z-index:3;left:0;right:0;top:0;height:2px;background:linear-gradient(90deg,transparent,#ff7b39,transparent);box-shadow:0 0 18px #ff7b3970;animation:blueprintSweep 7s linear infinite;pointer-events:none}
+@keyframes blueprintSweep{0%{top:0;opacity:0}12%{opacity:1}88%{opacity:.5}100%{top:100%;opacity:0}}
+.product-list{border:0;border-top:1px solid #587184;border-bottom:1px solid #587184;background:transparent}
+.product-row{position:relative;display:grid;grid-template-columns:60px minmax(170px,1fr) minmax(270px,1.6fr) 155px;align-items:center;gap:24px;padding:26px 12px;background:transparent!important;border:0;border-bottom:1px solid #344d5d;overflow:hidden;transition:background .25s,padding .25s}
+.product-row:last-child{border-bottom:0}
+.product-row:before{content:"";position:absolute;left:0;top:0;bottom:0;width:2px;background:#ff7b39;transform:scaleY(0);transform-origin:bottom;transition:transform .3s}
+.product-row:hover{background:#162b3b!important;padding-left:21px}
+.product-row:hover:before{transform:scaleY(1)}
+.product-no{font:12px Consolas,monospace;color:#ff8b50}
+.product-row h3{font:700 25px Bahnschrift,"Arial Narrow",Arial,sans-serif;letter-spacing:-.5px}
+.product-row p{font:10px Consolas,monospace;color:#93aabd}
+.product-row dl{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:0;border-left:1px solid #415c70}
+.product-row dl div{padding:0 14px;border-right:1px solid #415c70;min-width:0}
+.product-row dt{font:9px Consolas,monospace;color:#7f9caf;text-transform:uppercase;letter-spacing:1px}
+.product-row dd{font:700 12px Consolas,monospace;color:#e7f0f3;white-space:nowrap}
+.product-row .text-button{font:10px Consolas,monospace;color:#ff935c;letter-spacing:.5px}
+.service{position:relative;grid-template-columns:.7fr 1.1fr 1.2fr;align-items:center;gap:4vw;background:#c8d6dc;padding:68px 6vw;overflow:hidden}
+.service:before{content:"MW / SERVICE";position:absolute;right:-1vw;bottom:-35px;font:900 clamp(75px,13vw,180px) Bahnschrift,"Arial Narrow",Arial,sans-serif;letter-spacing:-7px;color:rgba(23,50,67,.055);white-space:nowrap;pointer-events:none}
+.service-copy h2{font:800 clamp(38px,4.2vw,58px)/.91 Bahnschrift,"Arial Narrow",Arial,sans-serif;text-transform:uppercase;letter-spacing:-1.8px}
+.service-steps{border:0;counter-reset:svc}
+.service-steps li{position:relative;display:grid;grid-template-columns:40px 1fr;gap:13px;padding:19px 0;border-bottom:1px solid #9eafb8}
+.service-steps li>span{display:grid;place-items:center;width:28px;height:28px;border:1px solid #c75d2d;color:#c75d2d;font:11px Consolas,monospace}
+.service-steps b{font:700 12px Bahnschrift,Arial,sans-serif;text-transform:uppercase}
+.service-steps small{font:10px/1.55 Consolas,monospace;color:#526b79}
+@media(max-width:900px){
+ .product-row{grid-template-columns:36px 1fr 140px;gap:16px}
+ .product-row dl{grid-column:2/-1;grid-row:2}
+ .product-row .text-button{grid-column:3;grid-row:1}
+ .service{grid-template-columns:1fr 1fr}
+ .service-label{grid-column:1/-1}
+}
+@media(max-width:600px){
+ .product-row{grid-template-columns:24px 1fr;padding:20px 4px;gap:9px}
+ .product-row dl{grid-column:2;display:flex;flex-wrap:wrap;gap:0}
+ .product-row dl div{padding:0 9px 9px 0;border:0}
+ .product-row .text-button{grid-column:2;grid-row:auto;text-align:left;justify-self:start}
+ .service{grid-template-columns:1fr;padding:52px 7vw}
+ .service-label{grid-column:auto}
+ .service:before{font-size:82px}
+}
+@keyframes machinePulse{0%,100%{opacity:.35}50%{opacity:1}}
+.product-row:nth-child(1) .product-no{animation:machinePulse 2.6s infinite}
+.product-row:nth-child(2) .product-no{animation:machinePulse 2.6s .45s infinite}
+.product-row:nth-child(3) .product-no{animation:machinePulse 2.6s .9s infinite}
+@media(prefers-reduced-motion:reduce){.hero:after,.product-row .product-no{animation:none}}
+
+@media(max-width:600px){
+ .hero h1{font-size:clamp(38px,9.2vw,49px);letter-spacing:-1.7px;line-height:.94;overflow-wrap:anywhere}
+ .hero-copy{min-width:0}.intro{max-width:100%;overflow-wrap:anywhere}
+ .header{gap:8px}.wordmark{font-size:17px}
+ .header-link{max-width:112px;white-space:normal;text-align:right;font-size:9px;line-height:1.35}
+}
+@keyframes machineBoot{from{opacity:0;transform:translateY(12px);filter:brightness(1.5)}to{opacity:1;transform:none;filter:none}}
+.product-row.filter-arrive{animation:machineBoot .48s cubic-bezier(.2,.75,.2,1) both}
+@media(max-width:600px){.header{display:grid;grid-template-columns:minmax(0,1fr) 108px;gap:10px}.header .wordmark{grid-column:1}.header-link{grid-column:2;width:108px;max-width:108px;justify-self:end;font-size:8px;letter-spacing:0}.header nav{grid-column:1/-1;grid-row:2;order:initial}}
+@media(prefers-reduced-motion:reduce){.hero-video{display:none!important}.hero:after,.product-row .product-no{animation:none!important}}
+@media(max-width:600px){.header-link{display:none}}

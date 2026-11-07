@@ -1,3 +1,5 @@
+[Reading 159 lines from start (total: 159 lines, 0 remaining)]
+
 :root{--cream:#eee9df;--ink:#202923;--olive:#53664e;--red:#a94d3c;--line:#c9c3b8;--serif:'Book Antiqua','Palatino Linotype',Georgia,serif}
 *{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Corbel','Segoe UI',Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.header{height:92px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;border-bottom:1px solid var(--line)}.logo{font:600 19px var(--serif);letter-spacing:.5px;line-height:1}.logo i{color:var(--red);font-weight:500}.logo small{display:block;font:600 8px 'Corbel';letter-spacing:2px;color:#77786b;margin-top:7px}.header nav{display:flex;gap:30px;font-size:12px}.header nav a:hover{color:var(--red)}.reserve{font-size:12px;font-weight:700;border-bottom:1px solid var(--ink);padding-bottom:8px}.reserve span{color:var(--red);margin-left:14px}
 .hero{display:grid;grid-template-columns:.85fr 1.15fr;gap:6vw;padding:55px 6vw 60px;min-height:600px}.hero-text{position:relative;padding:25px 0 0 5vw}.eyebrow{font-family:'Corbel','Segoe UI',Arial,sans-serif;font-size:9px;letter-spacing:2px;color:var(--red);font-weight:700;margin:0 0 23px}.hero h1{font:500 clamp(54px,6vw,82px)/.98 var(--serif);letter-spacing:-3px;margin:0 0 23px}.hero h1 em,.story h2 em,.menu h2 em,.booking h2 em{color:var(--red);font-weight:500}.hero-lead{max-width:350px;color:#686d61;font-size:14px;line-height:1.8}.dark-link{display:inline-flex;gap:45px;background:var(--ink);color:var(--cream);padding:15px 18px;font-size:12px;margin-top:18px;transition:background .18s}.dark-link:hover{background:var(--red)}.dark-link span{color:#d7a08e}.hero-address{border-top:1px solid var(--line);padding-top:14px;margin-top:52px;font-size:9px;letter-spacing:1.5px;color:#76796f;line-height:1.9}.hero-photo{margin:0;position:relative;min-height:485px;background:#d2c8b9}.hero-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 60%}.hero-photo figcaption{position:absolute;bottom:0;left:0;background:var(--ink);color:var(--cream);padding:11px 15px;font-size:9px;letter-spacing:1.5px}
@@ -93,3 +95,67 @@ html,body{font-family:Arial,Helvetica,sans-serif}
 /* Display type: Italian menu editorial */
 :root{--serif:"Palatino Linotype","Book Antiqua",Georgia,serif}
 .logo,.hero h1,.story h2,.menu h2,.dish h3,.booking h2,.story-side{font-family:"Palatino Linotype","Book Antiqua",Georgia,serif}
+
+/* OSTERIA LUCE — trattoria menu / Palatino and warm print */
+body{font-family:"Trebuchet MS",Arial,sans-serif}
+.logo,.hero h1,.story h2,.menu h2,.dish h3,.booking h2,.story-side{font-family:"Palatino Linotype","Book Antiqua",Georgia,serif}
+.header{background:#f7e9c9;border-bottom:2px solid #25264a}
+.logo{font-size:25px;letter-spacing:-.4px}
+.hero{position:relative;grid-template-columns:.82fr 1.18fr;gap:0;padding:24px 4vw 30px;min-height:650px;background:#f8edcf}
+.hero-text{position:relative;z-index:2;padding:62px 6vw 45px 4vw;background:#c43d2e;color:#fff0c9}
+.hero-text:after{content:"";position:absolute;right:-26px;top:0;bottom:0;width:26px;background:#c43d2e;clip-path:polygon(0 0,100% 50%,0 100%)}
+.hero h1{font:500 clamp(58px,6.2vw,88px)/.88 "Palatino Linotype","Book Antiqua",Georgia,serif;letter-spacing:-1.4px;color:#fff0c9}
+.hero h1 em{color:#f3cd68}
+.hero-lead{font:13px/1.9 "Trebuchet MS",Arial,sans-serif;color:#ffdfc1;max-width:370px}
+.dark-link{background:#27294d;color:#fff0ca;border-radius:0;padding:14px 22px;font:700 10px "Trebuchet MS",Arial,sans-serif;letter-spacing:1px;text-transform:uppercase}
+.hero-photo{position:relative;overflow:hidden;min-height:560px;background:#2a304c}
+.hero-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:0;filter:saturate(.78)}
+.hero-video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:1;filter:saturate(.88) contrast(1.05)}
+.hero-photo figcaption{position:absolute;z-index:2;left:18px;bottom:18px;background:#28294c;color:#fff0ca;padding:11px 15px;font:9px "Trebuchet MS",Arial,sans-serif;letter-spacing:1.2px}
+.note-bar{background:#f0c75d;color:#5a402c;overflow:hidden;white-space:nowrap;justify-content:space-around;font:9px "Trebuchet MS",Arial,sans-serif;letter-spacing:1.8px}
+.story{background:#fff7e5;padding:100px 9vw;grid-template-columns:.6fr 1.8fr .45fr;gap:5vw}
+.story h2{font:500 clamp(52px,6vw,82px)/.9 "Palatino Linotype","Book Antiqua",Georgia,serif;color:#27294d;letter-spacing:-1.7px}
+.story h2 em{color:#c43d2e}
+.story p{font:14px/2 "Palatino Linotype","Book Antiqua",Georgia,serif;color:#645746;max-width:640px}
+.story-side{font:italic 21px/1.2 "Palatino Linotype",Georgia,serif;color:#c43d2e}
+.menu{background:#f1c95f;padding:85px 10vw 95px}
+.menu-head{align-items:end;grid-template-columns:1.1fr .9fr}
+.menu h2{font:500 clamp(54px,6vw,82px)/.9 "Palatino Linotype","Book Antiqua",Georgia,serif;color:#28294b}
+.menu-head>p{font:13px/1.8 "Trebuchet MS",Arial,sans-serif;color:#665333;max-width:390px}
+.menu-tabs{border-bottom:1px solid #b38b3d;padding-bottom:12px;gap:28px}
+.tab{position:relative;border:0;border-radius:0;background:transparent;padding:10px 0;color:#6a5432;font:11px "Trebuchet MS",Arial,sans-serif;letter-spacing:1px;text-transform:uppercase}
+.tab:after{content:"";position:absolute;left:0;right:100%;bottom:-13px;height:3px;background:#b83d2e;transition:right .3s}
+.tab.is-active{color:#b83d2e;background:transparent}
+.tab.is-active:after{right:0}
+.menu-items{grid-template-columns:1fr 1fr;gap:0 6vw;margin-top:12px}
+.dish{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:end;gap:18px;padding:22px 0;border-bottom:1px dotted #a9864a;background:transparent;position:relative}
+.dish h3{font:500 24px "Palatino Linotype","Book Antiqua",Georgia,serif;color:#27294d;margin:0 0 4px}
+.dish p{font:11px "Trebuchet MS",Arial,sans-serif;color:#725e3b;margin:0}
+.dish b{font:italic 23px "Palatino Linotype",Georgia,serif;color:#b83d2e}
+.menu-foot{font:9px "Trebuchet MS",Arial,sans-serif;color:#71582d;margin-top:25px}
+.booking{background:#29385d;color:#fff1cc}
+.booking h2{font:500 clamp(46px,5vw,68px)/.93 "Palatino Linotype","Book Antiqua",Georgia,serif}
+.booking-copy>p:not(.eyebrow){font:13px/1.8 "Trebuchet MS",Arial,sans-serif;color:#d5d7c7}
+.booking button{background:#efc85d;color:#27294d;border-radius:0;font:700 10px "Trebuchet MS",Arial,sans-serif;text-transform:uppercase;letter-spacing:1px}
+@media(max-width:900px){.hero{grid-template-columns:1fr;padding:20px 5vw}.hero-text{padding:50px 7vw}.hero-text:after{display:none}.hero-photo{min-height:400px}.story{grid-template-columns:1fr 2fr}.story-side{display:none}.menu{padding:75px 7vw}}
+@media(max-width:600px){.hero{padding:12px 4vw 20px}.hero-text{padding:34px 7vw}.hero h1{font-size:59px}.hero-photo{min-height:300px}.story{grid-template-columns:1fr;padding:65px 7vw}.story h2{font-size:55px}.menu{padding:65px 7vw}.menu-head{grid-template-columns:1fr;gap:16px}.menu-items{grid-template-columns:1fr}.dish{padding:17px 0}.dish h3{font-size:22px}.booking-copy{padding:48px 7vw}}
+@keyframes trattoriaMarquee{from{transform:translateX(0)}to{transform:translateX(-30%)}}
+.note-bar{justify-content:flex-start;gap:42px}
+.note-bar span{display:inline-block;animation:trattoriaMarquee 18s linear infinite}
+.dish{animation:menuPrintIn .55s cubic-bezier(.2,.7,.2,1) both}
+.dish:nth-child(2){animation-delay:.08s}.dish:nth-child(3){animation-delay:.16s}.dish:nth-child(4){animation-delay:.24s}
+@keyframes menuPrintIn{from{opacity:0;clip-path:inset(0 0 100% 0);transform:translateY(10px)}to{opacity:1;clip-path:inset(0 0 0 0);transform:none}}
+@media(prefers-reduced-motion:reduce){.note-bar span,.dish{animation:none}}
+
+@media(max-width:600px){
+ .header{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:10px 8px;padding:14px 5vw}
+ .logo{font-size:16px;min-width:0;white-space:nowrap}
+ .reserve{max-width:100px;padding:9px 9px;font-size:8px;white-space:nowrap}
+ .header nav{grid-column:1/-1;grid-row:2;width:100%;gap:12px;flex-wrap:wrap}
+ .header nav a{font-size:8px}
+ .hero-text{padding:32px 7vw}
+ .hero-text:after{display:none}
+}
+@media(max-width:600px){.reserve{width:96px;max-width:96px;padding:8px 7px;font-size:8px;text-align:center}}
+@media(prefers-reduced-motion:reduce){.hero-video{display:none!important}.note-bar span,.dish{animation:none!important}}
+@media(max-width:600px){.reserve{display:none}}
