@@ -43,3 +43,11 @@ html,body{background:#111416;color:#edf1f2;font-family:var(--sans)}
 footer{background:#0c1012;color:#8c989a;padding:25px 5vw;border-top:1px solid #343b40}footer .brand{color:#f3f5f1}
 @media(max-width:850px){.project,.project-reverse{display:flex;flex-direction:column;gap:0}.project-copy,.project-reverse .project-copy{order:2}.project-image,.project-reverse .project-image{order:1}.contact{grid-template-columns:1fr}}
 @media(max-width:600px){.site-header{padding:18px 6vw}.site-header nav{gap:18px}.availability{border:0;padding:0}.intro{padding:45px 7vw 52px}.intro-meta{font-size:8px;flex-wrap:wrap}.intro h1{font-size:52px;letter-spacing:-2.5px;margin:48px 0 30px}.intro-bottom{grid-template-columns:1fr}.work,.services{padding:38px 7vw 52px}.work{grid-template-columns:1fr}.work>.section-heading,.work>.disclaimer{grid-column:1}.project-image{height:240px}.service-row{grid-template-columns:28px 1fr;gap:10px}.service-row p{grid-column:2}.contact{padding:52px 7vw}}
+
+/* Portfolio typography: simple editorial system fonts */
+:root{--sans:Arial,Helvetica,sans-serif;--display:Georgia,"Times New Roman",serif}
+html,body{font-family:Arial,Helvetica,sans-serif}
+.brand{font:700 20px Arial,Helvetica,sans-serif;letter-spacing:1.2px}
+.intro h1,.project h2,.service-row h3,.contact h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.5px;text-transform:none}
+.intro h1{line-height:1.02;letter-spacing:-1.2px}.project h2{line-height:1.04}
+.intro-meta,.section-heading,.project-index,.availability,.tags span,.service-row>span,footer{font-family:Arial,Helvetica,sans-serif}
