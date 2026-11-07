@@ -73,3 +73,12 @@ footer .brand{color:#fff}footer .brand span{color:#d7f36a}
  .brand{grid-column:1;min-width:0}
  .call{grid-column:2;flex:0 0 auto;width:auto;min-width:max-content;max-width:none;justify-self:end;padding:8px 9px;font-size:8px}
 }
+
+/* Type refinement: straightforward home-service typography */
+:root{--font:Arial,Helvetica,sans-serif}
+html,body{font-family:Arial,Helvetica,sans-serif}
+.brand{font:700 25px Arial,Helvetica,sans-serif;letter-spacing:1.5px}
+.header nav,.call,.eyebrow,.button,.small-note,.photo-note,.service-line span,.service-line b,.service-line small,.estimate-total span,.estimate form>label,.estimate legend,.check,.calc-foot,.how-list article>span,.how-list h3,.how-list p,.request label,.request input,.request textarea,.request button,footer{font-family:Arial,Helvetica,sans-serif}
+.hero h1,.estimate-copy h2,.how h2,.request h2{font-family:Georgia,"Times New Roman",serif;font-weight:500;letter-spacing:-.5px;line-height:1.02}
+.estimate-total strong{font:500 52px Georgia,"Times New Roman",serif;letter-spacing:-1px}
+.how-list h3{font-weight:600}
