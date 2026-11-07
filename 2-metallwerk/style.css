@@ -66,3 +66,7 @@ html,body{font-family:Tahoma,Arial,sans-serif}
 .intro{font-family:Tahoma,Arial,sans-serif;font-size:15px;line-height:1.8}
 .product-row h3,.service-steps b{font-family:Arial,Helvetica,sans-serif;font-weight:600;letter-spacing:0}
 .button,.filter,.text-button,.contact label,.contact input,.contact select,.contact textarea{font-family:Arial,Helvetica,sans-serif}
+
+/* Display type: clean technical sans */
+.hero h1,.section-head h2,.service-copy h2,.contact h2{font-family:"Segoe UI",Tahoma,Arial,sans-serif;font-weight:600;letter-spacing:-1.5px;text-transform:none;line-height:1.02}
+.product-row h3,.service-steps b{font-family:"Segoe UI",Tahoma,Arial,sans-serif;font-weight:600}
