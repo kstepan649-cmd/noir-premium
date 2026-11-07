@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="PULITO — концепт сайта клининговой службы с калькулятором стоимости.">
+<title>PULITO — уборка квартир и офисов</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+  <a class="brand" href="#top">pulito<span>.</span></a>
+  <nav><a href="#services">Услуги</a><a href="#estimate">Цены</a><a href="#about">Как работаем</a></nav>
+  <a class="call" href="#estimate">Рассчитать стоимость <b>></b></a>
+</header>
+<main id="top">
+  <section class="hero">
+    <div class="hero-copy"><p class="eyebrow">УБОРКА КВАРТИР / ДОМОВ / ОФИСОВ</p><h1>Чистый дом.<br><em>Свободный</em><br>вечер.</h1><p>Поддерживающая и генеральная уборка. Согласуем объём до выезда, привезём инвентарь и средства.</p><a class="button" href="#estimate">Рассчитать уборку </a><div class="small-note">ТАЛЛИНН И БЛИЖАЙШИЕ РАЙОНЫ / ДЕМО-ПРОЕКТ</div></div>
+    <div class="hero-photo"><img src="assets/home-cleaning.jpg" alt="Уборка пола в квартире"><div class="photo-note"><span>1</span> Уход за мебелью и текстилем</div></div>
+  </section>
+  <section class="service-line" id="services"><div><span>1</span><b>Поддерживающая уборка</b><small>Кухня, санузел, пыль и полы</small></div><div><span>2</span><b>Генеральная уборка</b><small>Труднодоступные места и детали</small></div><div><span>3</span><b>После ремонта</b><small>Строительная пыль и следы работ</small></div></section>
+  <section class="estimate" id="estimate">
+    <div class="estimate-copy"><p class="eyebrow">КАЛЬКУЛЯТОР / 2</p><h2>Прикинем<br>стоимость.</h2><p>Выберите площадь и дополнительные работы. Сумма нужна для примера; окончательную цену подтверждают после уточнения объекта.</p><div class="estimate-total"><span>ПРЕДВАРИТЕЛЬНО</span><strong id="estimateValue">€78</strong><small id="estimateText">1 комната · базовая уборка</small></div></div>
+    <form id="estimateForm">
+      <label>Количество комнат<select id="rooms"><option value="1">1 комната</option><option value="2" selected>2 комнаты</option><option value="3">3 комнаты</option><option value="4">4 комнаты</option><option value="5">5 и более</option></select></label>
+      <fieldset><legend>Дополнительные работы</legend><label class="check"><input type="checkbox" value="12" data-name="Окна">Мойка окон <b>+€12</b></label><label class="check"><input type="checkbox" value="18" data-name="Диван">Чистка дивана <b>+€18</b></label><label class="check"><input type="checkbox" value="15" data-name="Духовка">Духовка <b>+€15</b></label></fieldset>
+      <div class="calc-foot">В расчёте используются примерные тарифы: базовая уборка €42 + €18 за комнату.</div>
+      <a class="button button-dark" href="#request">Оставить заявку </a>
+    </form>
+  </section>
+  <section class="how" id="about"><div class="how-title"><p class="eyebrow">ПОРЯДОК РАБОТЫ / 3</p><h2>Без сюрпризов<br>в день уборки.</h2></div><div class="how-list"><article><span>1</span><div><h3>Уточняем объект</h3><p>Площадь, количество комнат, тип уборки и дополнительные задачи.</p></div></article><article><span>2</span><div><h3>Подтверждаем цену</h3><p>Согласуем состав работ и время визита до приезда команды.</p></div></article><article><span>3</span><div><h3>Принимаете результат</h3><p>Проверяем помещения по согласованному списку работ.</p></div></article></div></section>
+  <section class="request" id="request"><div><p class="eyebrow">ЗАКАЗАТЬ УБОРКУ / 4</p><h2>Когда удобно<br>начать?</h2><p>Оставьте контакты — менеджер сможет уточнить детали. Сейчас это демонстрационная форма без отправки данных.</p></div><form id="requestForm"><label>Имя<input name="name" required placeholder="Ваше имя"></label><label>Телефон<input name="phone" type="tel" required placeholder="+372 ..."></label><label>Комментарий<textarea name="note" rows="3" placeholder="Район, площадь, удобный день"></textarea></label><button type="submit">Отправить запрос <span>></span></button><p id="requestStatus" role="status">Демо-форма: данные не отправляются.</p></form></section>
+</main>
+<footer><a class="brand" href="#top">pulito<span>.</span></a><span>КОНЦЕПТ САЙТА · НАЗВАНИЕ И ТАРИФЫ УСЛОВНЫЕ</span><a href="#top">Наверх ↑</a></footer>
+<script src="app.js"></script>
+</body>
+</html>

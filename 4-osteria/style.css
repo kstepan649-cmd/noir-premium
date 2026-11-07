@@ -1,0 +1,81 @@
+:root{--cream:#eee9df;--ink:#202923;--olive:#53664e;--red:#a94d3c;--line:#c9c3b8;--serif:'Book Antiqua','Palatino Linotype',Georgia,serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--cream);color:var(--ink);font-family:'Corbel','Segoe UI',Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select{font:inherit}.header{height:92px;display:flex;align-items:center;justify-content:space-between;padding:0 6vw;border-bottom:1px solid var(--line)}.logo{font:600 19px var(--serif);letter-spacing:.5px;line-height:1}.logo i{color:var(--red);font-weight:500}.logo small{display:block;font:600 8px 'Corbel';letter-spacing:2px;color:#77786b;margin-top:7px}.header nav{display:flex;gap:30px;font-size:12px}.header nav a:hover{color:var(--red)}.reserve{font-size:12px;font-weight:700;border-bottom:1px solid var(--ink);padding-bottom:8px}.reserve span{color:var(--red);margin-left:14px}
+.hero{display:grid;grid-template-columns:.85fr 1.15fr;gap:6vw;padding:55px 6vw 60px;min-height:600px}.hero-text{position:relative;padding:25px 0 0 5vw}.eyebrow{font-family:'Corbel','Segoe UI',Arial,sans-serif;font-size:9px;letter-spacing:2px;color:var(--red);font-weight:700;margin:0 0 23px}.hero h1{font:500 clamp(54px,6vw,82px)/.98 var(--serif);letter-spacing:-3px;margin:0 0 23px}.hero h1 em,.story h2 em,.menu h2 em,.booking h2 em{color:var(--red);font-weight:500}.hero-lead{max-width:350px;color:#686d61;font-size:14px;line-height:1.8}.dark-link{display:inline-flex;gap:45px;background:var(--ink);color:var(--cream);padding:15px 18px;font-size:12px;margin-top:18px;transition:background .18s}.dark-link:hover{background:var(--red)}.dark-link span{color:#d7a08e}.hero-address{border-top:1px solid var(--line);padding-top:14px;margin-top:52px;font-size:9px;letter-spacing:1.5px;color:#76796f;line-height:1.9}.hero-photo{margin:0;position:relative;min-height:485px;background:#d2c8b9}.hero-photo img{width:100%;height:100%;position:absolute;inset:0;object-fit:cover;object-position:center 60%}.hero-photo figcaption{position:absolute;bottom:0;left:0;background:var(--ink);color:var(--cream);padding:11px 15px;font-size:9px;letter-spacing:1.5px}
+.note-bar{background:var(--olive);color:#f1ede3;display:flex;justify-content:space-around;align-items:center;padding:17px 5vw;font-size:9px;letter-spacing:1.8px}.note-bar i{color:#e5b1a1;font-style:normal;font-size:14px}
+.story{padding:100px 12vw;display:grid;grid-template-columns:.8fr 1.5fr .6fr;gap:4vw;align-items:start}.story-label{font-size:9px;letter-spacing:1.7px;color:var(--red);display:flex;align-items:center;gap:12px}.story-label i{height:1px;width:32px;background:var(--red)}.story h2{font:500 clamp(42px,5vw,66px)/1.0 var(--serif);letter-spacing:-2px;margin:0 0 28px}.story p{max-width:520px;color:#656a60;font-size:13px;line-height:1.9}.story-side{font:italic 500 18px/1.2 var(--serif);color:var(--olive);text-align:right;margin-top:110px}
+.menu{background:#dcd9cf;padding:95px 12vw}.menu-head{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:end}.menu h2{font:500 clamp(42px,5vw,66px)/1 var(--serif);margin:0;letter-spacing:-2px}.menu-head>p{max-width:360px;color:#6a6d63;font-size:12px;line-height:1.8;margin:0 0 7px}.menu-tabs{display:flex;gap:25px;border-bottom:1px solid #bdbbb0;margin-top:42px}.tab{border:0;background:none;padding:0 0 13px;position:relative;color:#72766b;cursor:pointer;font-size:12px}.tab.is-active{color:var(--ink);font-weight:700}.tab.is-active:after{content:'';height:2px;background:var(--red);position:absolute;left:0;right:0;bottom:-1px}.menu-items{display:grid;grid-template-columns:1fr 1fr;column-gap:55px}.dish{padding:20px 0;border-bottom:1px solid #c4c1b6;display:grid;grid-template-columns:1fr auto;gap:10px}.dish h3{font:500 19px var(--serif);margin:0 0 5px}.dish p{margin:0;color:#72766b;font-size:11px}.dish b{font:500 17px var(--serif);color:var(--red)}.menu-foot{margin-top:17px;color:#7d7e76;font-size:10px}
+.booking{background:var(--olive);color:#f5f0e6;display:grid;grid-template-columns:1fr 1fr;min-height:570px}.booking-image{min-height:570px;overflow:hidden}.booking-image img{width:100%;height:100%;object-fit:cover;filter:saturate(.75)}.booking-copy{padding:75px 8vw 65px 6vw}.booking h2{font:500 clamp(38px,4.4vw,58px)/1.2 var(--serif);margin:0 0 20px;letter-spacing:-1.5px}.booking h2 em{color:#e7b2a1}.booking-copy>p:not(.eyebrow){color:#d3d5c9;font-size:12px;line-height:1.8;max-width:390px}.booking form{margin-top:28px;display:grid;gap:13px}.form-grid{display:grid;grid-template-columns:1fr 1fr;gap:13px}.booking label{display:grid;gap:7px;color:#dce0d4;font-size:10px}.booking input,.booking select{min-width:0;padding:12px;background:#61745b;border:1px solid #81917b;color:white;outline:none}.booking input:focus,.booking select:focus{border-color:#efc0a9}.booking button{background:var(--cream);color:var(--ink);border:0;padding:14px 16px;display:flex;justify-content:space-between;cursor:pointer;font-weight:700;font-size:12px}.booking button:hover{background:white}.booking form>p{font-size:10px;color:#c8d0c1;margin:0}
+footer{background:#1d2923;color:#eee9df;padding:25px 6vw;display:grid;grid-template-columns:1fr 1fr 1fr auto;gap:30px;align-items:center}footer>div{display:grid;gap:6px}footer b{font-size:8px;letter-spacing:1.5px;color:#c99c8e}footer>div span{font-size:10px;line-height:1.6;color:#c8c9bd}footer .concept{font-size:8px;color:#a2aa9d;letter-spacing:1px}
+@media(max-width:900px){.hero{grid-template-columns:1fr;gap:28px}.hero-text{padding-left:0}.hero-photo{min-height:390px}.story{grid-template-columns:1fr 2fr}.story-side{display:none}.booking-copy{padding:60px 6vw}.menu{padding-inline:8vw}footer{grid-template-columns:1fr 1fr}}
+@media(max-width:600px){.header{height:auto;min-height:80px;padding:15px 5vw;flex-wrap:wrap;gap:15px}.header nav{order:3;width:100%;gap:20px;font-size:11px}.logo{font-size:17px}.hero{padding:35px 6vw 45px}.hero-text{padding-top:0}.hero h1{font-size:59px}.hero-photo{min-height:300px}.note-bar{gap:12px;flex-wrap:wrap;justify-content:center;font-size:8px}.story{padding:65px 7vw;grid-template-columns:1fr;gap:25px}.menu{padding:66px 7vw}.menu-head{grid-template-columns:1fr;gap:18px}.menu-tabs{gap:18px;margin-top:28px}.menu-items{grid-template-columns:1fr}.booking{grid-template-columns:1fr}.booking-image{min-height:280px;height:280px}.booking-copy{padding:55px 7vw}.form-grid{grid-template-columns:1fr}footer{grid-template-columns:1fr 1fr;padding:25px 7vw;gap:23px}footer .concept{grid-column:1/-1}}
+
+/* OSTERIA LUCE — lively Italian trattoria / tomato, butter, cobalt */
+:root{--cream:#fff0ca;--ink:#282b4b;--olive:#b82e25;--red:#c83a2c;--line:#e0b878;--serif:"Book Antiqua","Palatino Linotype",Georgia,serif}
+body{background:#fff0ca;color:#282b4b;font-family:"Trebuchet MS","Segoe UI",Arial,sans-serif}
+.header{height:86px;background:#fff0ca;padding:0 5vw;border-bottom:2px solid #282b4b}
+.logo{font:800 22px "Book Antiqua",Georgia,serif;letter-spacing:.3px;color:#282b4b}.logo i{color:#c83a2c;font-style:italic}
+.logo small{color:#8b5b4e;font:700 8px Consolas,monospace;letter-spacing:1.7px}
+.header nav{font:700 11px "Trebuchet MS",Arial,sans-serif;text-transform:uppercase;letter-spacing:.3px;gap:28px}.header nav a:hover{color:#c83a2c}
+.reserve{background:#c83a2c;color:#fff0ca;border:0;padding:13px 18px;font:700 10px Consolas,monospace;letter-spacing:1px;text-transform:uppercase}.reserve span{color:#ffe28d}
+.hero{padding:25px 5vw 36px;min-height:620px;grid-template-columns:.9fr 1.1fr;gap:16px;align-items:stretch}
+.hero-text{background:#c83a2c;color:#fff0ca;padding:52px 4vw 34px;display:flex;flex-direction:column;align-items:flex-start}
+.eyebrow{font:700 9px Consolas,monospace;letter-spacing:1.7px;color:#ffdd8c}
+.hero h1{font:500 clamp(56px,6vw,86px)/.91 "Book Antiqua","Palatino Linotype",Georgia,serif;letter-spacing:-1.6px;color:#fff0ca;margin:19px 0 20px}
+.hero h1 em{color:#ffde91;font-style:italic}.hero-lead{color:#ffe3ca;font-size:13px;line-height:1.8}
+.dark-link{background:#282b4b;color:#fff0ca;border-radius:24px;padding:14px 21px;font:700 10px Consolas,monospace;text-transform:uppercase;letter-spacing:.5px}
+.dark-link:hover{background:#111630}.dark-link span{color:#ffde91}
+.hero-address{border-color:#e77a65;color:#ffe5d2;font:9px Consolas,monospace;letter-spacing:1.4px;margin-top:auto;padding-top:17px}
+.hero-photo{min-height:540px;overflow:hidden;background:#e7bd78}.hero-photo img{filter:saturate(1.12) contrast(1.03)}
+.hero-photo figcaption{background:#282b4b;color:#fff0ca;font:9px Consolas,monospace;letter-spacing:1.5px;padding:14px 18px}
+.note-bar{background:#f1c95f;color:#282b4b;padding:17px 5vw;font:700 9px Consolas,monospace;letter-spacing:1.4px;border-block:1px solid #e2b44c}.note-bar i{color:#c83a2c}
+.story{padding:90px 9vw;grid-template-columns:.7fr 1.6fr .5fr;gap:4vw;background:#fff7e5}
+.story-label{color:#c83a2c;font:9px Consolas,monospace;letter-spacing:1.3px}.story-label i{background:#c83a2c}
+.story h2{font:500 clamp(46px,5vw,70px)/.94 "Book Antiqua",Georgia,serif;color:#282b4b;letter-spacing:-1px}
+.story h2 em{color:#c83a2c;font-style:italic}.story p{color:#656174;font-size:13px;line-height:1.9}
+.story-side{font:italic 600 19px/1.2 "Book Antiqua",Georgia,serif;color:#c83a2c}
+.menu{background:#f1c95f;padding:86px 9vw}.menu-head{grid-template-columns:1.2fr .8fr;gap:6vw}
+.menu .eyebrow{color:#9c2b25}.menu h2{font:500 clamp(48px,5.4vw,75px)/.9 "Book Antiqua",Georgia,serif;color:#282b4b;letter-spacing:-1.2px}
+.menu h2 em{color:#c83a2c;font-style:italic}.menu-head>p{color:#625a47;font-size:12px;line-height:1.8}
+.menu-tabs{gap:9px;border:0;margin-top:38px;flex-wrap:wrap}
+.tab{border:1px solid #a77e40;border-radius:30px;padding:11px 19px;color:#514333;font:700 10px Consolas,monospace;text-transform:uppercase;letter-spacing:.5px}
+.tab.is-active{background:#282b4b;border-color:#282b4b;color:#fff0ca}.tab.is-active:after{display:none}
+.menu-items{grid-template-columns:1fr 1fr;gap:0 50px;margin-top:15px}.dish{border-bottom:1px dashed #bc9856;padding:20px 0;grid-template-columns:1fr auto}
+.dish h3{font:600 21px "Book Antiqua",Georgia,serif;color:#282b4b}.dish p{font:11px "Trebuchet MS",Arial,sans-serif;color:#69604f;line-height:1.6}
+.dish b{font:700 18px "Trebuchet MS",Arial,sans-serif;color:#c83a2c}.menu-foot{font:10px Consolas,monospace;color:#736446;margin-top:22px}
+.booking{background:#28385f;color:#fff0ca;grid-template-columns:1.05fr .95fr}.booking-image{min-height:590px}
+.booking-image img{filter:saturate(.95)}.booking-copy{padding:72px 7vw 60px}
+.booking .eyebrow{color:#ffda83}.booking h2{font:500 clamp(42px,4.4vw,62px)/.98 "Book Antiqua",Georgia,serif;color:#fff0ca}
+.booking h2 em{color:#ffcf72}.booking-copy>p:not(.eyebrow){color:#d8d8db;font-size:12px;line-height:1.8}
+.booking label{color:#f4dca7;font:10px Consolas,monospace}
+.booking input,.booking select{background:#1f2d50;border:1px solid #7080a0;border-radius:0;color:#fff0ca;padding:13px;font:12px "Trebuchet MS",Arial,sans-serif}
+.booking input:focus,.booking select:focus{border-color:#ffcf72}
+.booking button{background:#f1c95f;color:#282b4b;border-radius:24px;padding:15px 20px;font:700 10px Consolas,monospace;text-transform:uppercase}
+.booking button:hover{background:#ffe091}.booking form>p{color:#c8d4e4;font:10px Consolas,monospace}
+footer{background:#1d2543;color:#e1d5ba;padding:25px 5vw}
+footer .logo{color:#fff0ca}footer .logo small{color:#dfb96e}footer b{color:#ffcf72;font:9px Consolas,monospace}
+footer>div span{color:#d1c9b5;font-size:11px;line-height:1.7}footer .concept{color:#a8b6cc;font:9px Consolas,monospace}
+@media(max-width:900px){.hero{grid-template-columns:1fr}.hero-photo{min-height:380px}.story{grid-template-columns:1fr 2fr}.story-side{display:none}.booking{grid-template-columns:1fr}.booking-image{min-height:360px}.booking-copy{padding:60px 8vw}}
+@media(max-width:600px){.header{height:auto;padding:16px 5vw;flex-wrap:wrap;gap:13px}.header nav{order:3;width:100%;gap:15px;font-size:9px}.logo{font-size:18px}.hero{padding:15px 4vw 25px}.hero-text{padding:35px 7vw}.hero h1{font-size:56px}.hero-photo{min-height:310px}.note-bar{justify-content:center;flex-wrap:wrap;gap:10px;font-size:8px}.story{grid-template-columns:1fr;padding:60px 7vw;gap:22px}.menu{padding:62px 7vw}.menu-head{grid-template-columns:1fr;gap:17px}.menu-items{grid-template-columns:1fr}.menu-tabs{margin-top:25px}.booking-image{height:280px;min-height:280px}.booking-copy{padding:52px 7vw}.form-grid{grid-template-columns:1fr}footer{grid-template-columns:1fr 1fr;padding:24px 7vw;gap:20px}footer .concept{grid-column:1/-1}}
+
+/* OSTERIA LUCE typography — menu-led trattoria */
+body{font-family:"Segoe UI",Arial,sans-serif}
+.header nav,.hero-lead,.story p,.menu-head>p,.dish p,.booking-copy>p:not(.eyebrow),footer>div span{font-family:"Segoe UI",Arial,sans-serif}
+.hero h1,.story h2,.menu h2,.dish h3,.booking h2,.story-side{font-family:"Book Antiqua","Palatino Linotype",Georgia,serif}
+
+@media(max-width:600px){
+ .header{display:grid;grid-template-columns:minmax(0,1fr) auto;align-items:center;gap:12px 8px;padding:14px 5vw}
+ .logo{min-width:0;font-size:17px;line-height:1}
+ .logo small{font-size:7px;letter-spacing:1.2px}
+ .reserve{grid-column:2;grid-row:1;white-space:nowrap;padding:10px 12px;font-size:9px}
+ .header nav{grid-column:1/-1;grid-row:2;order:initial;width:100%;display:flex;flex-wrap:wrap;gap:14px}
+ .header nav a{font-size:9px}
+}
+
+@media(max-width:900px){html,body{width:100%;max-width:100%;overflow-x:hidden}.hero,.hero-text,.hero-photo,.story,.menu,.booking,.booking-copy,.booking form{width:100%;max-width:100%;min-width:0}.hero-lead,.story p,.menu-head>p,.booking-copy>p{max-width:100%;overflow-wrap:anywhere}}
+@media(max-width:600px){.header{width:100%;max-width:100%;min-width:0;grid-template-columns:minmax(0,1fr) auto}.logo{font-size:15px;white-space:nowrap}.logo small{font-size:6px;letter-spacing:1px}.reserve{max-width:100px;padding:9px 8px;font-size:8px;letter-spacing:.3px}.header nav{min-width:0;gap:11px}.header nav a{white-space:nowrap;font-size:8px}.hero{width:100%;max-width:100%;padding:14px 4vw 22px}.hero-text{width:100%;padding:30px 6vw;min-width:0}.hero h1{font-size:clamp(46px,12.5vw,57px);letter-spacing:-1.6px;overflow-wrap:normal}.hero-lead{width:100%;max-width:100%;font-size:12px;overflow-wrap:anywhere}.hero-address{width:100%;overflow-wrap:anywhere}.hero-photo{width:100%;max-width:100%;min-width:0}.note-bar{width:100%;max-width:100%;gap:8px}.note-bar span{font-size:7px;letter-spacing:.8px}.menu,.story,.booking{padding-left:6vw;padding-right:6vw}.menu-head,.menu-items,.dish{min-width:0}.dish h3,.dish p{overflow-wrap:anywhere}.booking-copy{width:100%;min-width:0}.form-grid,.booking label{min-width:0}.booking input,.booking select{width:100%;min-width:0}}
+
+@media(max-width:600px){
+ .header{display:grid;grid-template-columns:minmax(0,1fr) max-content}
+ .logo{grid-column:1;min-width:0}
+ .reserve{grid-column:2;flex:0 0 auto;width:auto;min-width:max-content;max-width:none;justify-self:end}
+}
