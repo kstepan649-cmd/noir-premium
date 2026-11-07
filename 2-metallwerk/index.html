@@ -1,100 +1,13 @@
-[Reading 98 lines from start (total: 98 lines, 0 remaining)]
-
 <!doctype html>
-<html lang="ru">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="METALLWERK — демонстрационный сайт производителя металлообрабатывающего оборудования.">
-<title>METALLWERK — оборудование для производства</title>
-<link rel="stylesheet" href="style.css">
-</head>
-<body>
-<header class="header">
-  <a class="wordmark" href="#top">METALLWERK</a>
-  <nav aria-label="Основная навигация">
-    <a href="#machines">Оборудование</a>
-    <a href="#service">Сервис</a>
-    <a href="#contacts">Контакты</a>
-  </nav>
-  <a class="header-link" href="#contacts">Запросить подбор <span>></span></a>
-</header>
-<main id="top">
-  <section class="hero">
-    <div class="hero-copy">
-      <p class="kicker">МЕТАЛЛООБРАБОТКА / КАТАЛОГ ОБОРУДОВАНИЯ</p>
-      <h1>Точная работа<br>начинается<br><em>с выбора станка.</em></h1>
-      <p class="intro">Фрезерные центры, токарные станки и лазерная резка для небольших цехов и серийного производства.</p>
-      <a class="button" href="#machines">Смотреть оборудование </a>
-      <div class="hero-note"><span>1</span> Подбор оборудования под задачу и материал</div>
-    </div>
-    <figure class="hero-photo">\n      <img src="assets/cnc-workshop.jpg" alt="Станок с ЧПУ в производственном цехе">
-<video class="hero-video" autoplay muted loop playsinline preload="metadata" poster="assets/cnc-workshop.jpg" aria-hidden="true"><source src="https://videos.pexels.com/video-files/18883366/18883366-hd_1920_1080_50fps.mp4" type="video/mp4"></video>
-      <figcaption><span>ОБОРУДОВАНИЕ В РАБОТЕ</span></figcaption>
-    </figure>
-    <div class="side-index">METALLWERK — ENGINEERING EQUIPMENT</div>
-  </section>
-
-  <section class="intro-strip">
-    <p>Подбираем станки по материалу, размеру заготовки и требуемой точности. Перед поставкой согласуем комплектацию и оснастку.</p>
-    <div><strong>ЧПУ</strong><span>Управление</span></div>
-    <div><strong>3 типа</strong><span>Основные группы</span></div>
-    <div><strong>Под задачу</strong><span>Комплектация</span></div>
-  </section>
-
-  <section class="machines section" id="machines">
-    <div class="section-head">
-      <div><p class="kicker">КАТАЛОГ / 2026</p><h2>Линейка<br><em>оборудования.</em></h2></div>
-      <p class="section-note">Параметры ниже приведены для демонстрации структуры каталога. В реальном проекте сюда вносятся характеристики производителя.</p>
-    </div>
-    <div class="filters" role="group" aria-label="Фильтр оборудования">
-      <button class="filter is-active" data-filter="all" type="button">Всё оборудование</button>
-      <button class="filter" data-filter="mill" type="button">Фрезерные</button>
-      <button class="filter" data-filter="turn" type="button">Токарные</button>
-      <button class="filter" data-filter="laser" type="button">Лазерные</button>
-    </div>
-    <div class="product-list">
-      <article class="product-row" data-kind="mill">
-        <span class="product-no">1</span><div><h3>MW VMC 650</h3><p>Вертикальный обрабатывающий центр</p></div>
-        <dl><div><dt>Стол</dt><dd>800 × 400 мм</dd></div><div><dt>Шпиндель</dt><dd>10 000 об/мин</dd></div><div><dt>Инструмент</dt><dd>24 позиции</dd></div></dl>
-        <button class="text-button" data-product="MW VMC 650" type="button">Запросить цену <span>></span></button>
-      </article>
-      <article class="product-row" data-kind="turn">
-        <span class="product-no">2</span><div><h3>MW Turn 460</h3><p>Токарный станок с ЧПУ</p></div>
-        <dl><div><dt>Диаметр</dt><dd>460 мм</dd></div><div><dt>Длина точения</dt><dd>750 мм</dd></div><div><dt>Патрон</dt><dd>200 мм</dd></div></dl>
-        <button class="text-button" data-product="MW Turn 460" type="button">Запросить цену <span>></span></button>
-      </article>
-      <article class="product-row" data-kind="laser">
-        <span class="product-no">3</span><div><h3>MW Fiber 3015</h3><p>Лазерный комплекс для листа</p></div>
-        <dl><div><dt>Рабочее поле</dt><dd>3000 × 1500 мм</dd></div><div><dt>Источник</dt><dd>3 кВт</dd></div><div><dt>Материал</dt><dd>Сталь / алюминий</dd></div></dl>
-        <button class="text-button" data-product="MW Fiber 3015" type="button">Запросить цену <span>></span></button>
-      </article>
-    </div>
-  </section>
-
-  <section class="service section" id="service">
-    <div class="service-label"><span>ПОСЛЕ ПОКУПКИ</span><i></i></div>
-    <div class="service-copy"><h2>Запуск станка<br>по понятному плану.</h2><p>Проверка комплектации, доставка, установка, первичная настройка и инструктаж оператора. Состав работ и стоимость согласуются до заказа.</p></div>
-    <ol class="service-steps">
-      <li><span>1</span><div><b>Подбор</b><small>Уточняем материал, габариты и операции.</small></div></li>
-      <li><span>2</span><div><b>Комплектация</b><small>Согласуем оснастку и дополнительные опции.</small></div></li>
-      <li><span>3</span><div><b>Ввод в работу</b><small>Планируем установку и обучение.</small></div></li>
-    </ol>
-  </section>
-
-  <section class="contact section" id="contacts">
-    <div><p class="kicker">ОБСУДИТЬ ЗАДАЧУ</p><h2>Какую операцию<br>нужно закрыть?</h2><p class="contact-text">Оставьте модель или опишите деталь. В демонстрационной версии форма показывает подтверждение на странице и не отправляет данные.</p></div>
-    <form id="quoteForm">
-      <label>Модель оборудования<select name="machine" id="machine"><option value="">Пока не выбрана</option><option>MW VMC 650</option><option>MW Turn 460</option><option>MW Fiber 3015</option><option>Нужна помощь с подбором</option></select></label>
-      <label>Как к вам обращаться<input name="name" required placeholder="Имя"></label>
-      <label>Контакт для ответа<input name="contact" required placeholder="Телефон или e-mail"></label>
-      <label>Коротко о задаче<textarea name="message" rows="3" placeholder="Материал, размер детали, нужная операция"></textarea></label>
-      <button class="button" type="submit">Отправить запрос <span>></span></button>
-      <p class="form-status" id="formStatus" role="status">Демо-форма. Данные никуда не отправляются.</p>
-    </form>
-  </section>
-</main>
-<footer class="footer"><a class="wordmark" href="#top">METALLWERK</a><span>КОНЦЕПТ САЙТА · НАЗВАНИЕ И ПАРАМЕТРЫ УСЛОВНЫЕ</span><a href="#top">Наверх ↑</a></footer>
-<script src="app.js"></script>
-</body>
-</html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#f0f1f0"><meta name="description" content="METALLWERK — подбор оборудования для металлообработки, ЧПУ, токарные и фрезерные станки."><title>METALLWERK — инженерный каталог оборудования</title><link rel="preconnect" href="https://fonts.googleapis.com"><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=IBM+Plex+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet"><style>
+:root{--paper:#eff1f0;--white:#fff;--ink:#171d24;--muted:#64717a;--line:#d0d6d8;--blue:#183cc7;--orange:#f36d3d;--dark:#111a27}*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:80px}body{margin:0;background:var(--paper);color:var(--ink);font-family:Inter,Arial,sans-serif}a{color:inherit;text-decoration:none}button,input,select,textarea{font:inherit}.shell{width:min(1320px,calc(100% - 56px));margin:auto}.top{background:var(--white);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:10}.nav{height:74px;display:flex;align-items:center;justify-content:space-between}.logo{font:800 28px "Barlow Condensed",sans-serif;letter-spacing:.5px}.logo i{font-style:normal;color:var(--blue)}.logo small{font:9px "IBM Plex Mono",monospace;color:#88939b;display:block;letter-spacing:2px}.navlinks{display:flex;gap:30px;font-size:12px;color:#414d56}.navlinks a:hover{color:var(--blue)}.navright{display:flex;align-items:center;gap:16px;font-size:12px}.navright b{color:var(--orange)}.menubtn{display:none}.hero{display:grid;grid-template-columns:.85fr 1.15fr;min-height:610px;background:var(--dark);color:#f7f8fa}.hero-copy{padding:75px 3vw 60px max(28px,calc((100vw - 1320px)/2 + 28px))}.kicker{font:10px "IBM Plex Mono",monospace;letter-spacing:1.7px;color:#91a9ff}.hero h1{font:700 clamp(52px,6.8vw,90px)/.9 "Barlow Condensed",sans-serif;letter-spacing:-2px;margin:22px 0}.hero h1 em{font-style:normal;color:#8fa7ff}.hero p{max-width:430px;color:#c0c8d0;line-height:1.8;font-size:13px}.btn{display:inline-flex;background:var(--orange);color:#171d24;border:0;padding:16px 20px;font-size:11px;font-weight:800;letter-spacing:.4px;margin-top:20px;cursor:pointer}.hero-image{position:relative;min-height:610px;overflow:hidden}.hero-image img{width:100%;height:100%;position:absolute;object-fit:cover;inset:0;filter:contrast(1.05) saturate(.75)}.hero-image:after{content:"";position:absolute;inset:0;background:linear-gradient(90deg,#111a2755,transparent 35%),linear-gradient(0deg,#111a27a8,transparent 60%)}.hero-stamp{position:absolute;z-index:2;right:30px;bottom:30px;border:1px solid #ffffff70;padding:12px 15px;font:10px "IBM Plex Mono",monospace;color:white}.specstrip{background:var(--blue);color:white;display:grid;grid-template-columns:repeat(4,1fr)}.specstrip div{padding:18px 24px;border-right:1px solid #ffffff40}.specstrip strong{font:600 20px "Barlow Condensed",sans-serif;display:block}.specstrip small{font:9px "IBM Plex Mono",monospace;color:#c6d1ff}.section{padding:85px 0}.sectionhead{display:flex;justify-content:space-between;align-items:end;gap:28px;margin-bottom:28px}.sectionhead h2{font:700 clamp(38px,5vw,62px)/.95 "Barlow Condensed",sans-serif;letter-spacing:-1px;margin:12px 0}.sectionhead p{max-width:430px;color:var(--muted);font-size:12px;line-height:1.8}.kicker2{font:10px "IBM Plex Mono",monospace;color:var(--blue);letter-spacing:1.5px}.catalog-tools{display:flex;gap:10px;align-items:center;justify-content:space-between;margin:25px 0 18px;flex-wrap:wrap}.filters{display:flex;gap:6px;flex-wrap:wrap}.filter{border:1px solid #bec7cb;background:transparent;padding:11px 14px;color:#3d4a53;font-size:10px;cursor:pointer}.filter.active,.filter:hover{background:var(--blue);border-color:var(--blue);color:white}.search{width:min(290px,100%);padding:12px 14px;border:1px solid #c9d1d4;background:white;font-size:11px;outline:none}.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.machine{background:white;border:1px solid var(--line);transition:transform .2s,border-color .2s}.machine:hover{transform:translateY(-4px);border-color:var(--blue)}.machine[hidden]{display:none}.machine-art{height:185px;background:linear-gradient(135deg,#e8ecee,#d8dfe3);display:grid;place-items:center;position:relative;overflow:hidden}.machine-art:before{content:"";position:absolute;width:220px;height:110px;border:2px solid #9daab3;transform:skew(-16deg);box-shadow:inset 0 0 0 14px #d7dfe3,inset 0 0 0 16px #9daab3}.machine-art:after{content:"";position:absolute;width:68px;height:48px;border:2px solid var(--blue);left:calc(50% - 34px);top:65px;background:linear-gradient(90deg,transparent 48%,#8c9ba5 49%,#8c9ba5 51%,transparent 52%)}.machine-art span{position:absolute;bottom:13px;left:15px;font:9px "IBM Plex Mono",monospace;color:#64717a}.machine-body{padding:20px}.tag{font:9px "IBM Plex Mono",monospace;color:var(--blue);letter-spacing:1px}.machine h3{font:600 24px "Barlow Condensed",sans-serif;margin:9px 0}.machine p{font-size:11px;color:var(--muted);line-height:1.7;min-height:38px}.specs{display:grid;grid-template-columns:repeat(2,1fr);gap:8px;border-top:1px solid var(--line);padding:15px 0;margin-top:12px}.specs div{font:10px "IBM Plex Mono",monospace;color:#75818a}.specs b{display:block;color:#202b35;font:600 12px Inter;margin-top:4px}.machine-foot{display:flex;justify-content:space-between;align-items:center;border-top:1px solid var(--line);padding-top:14px}.machine-foot strong{font-size:11px}.machine-foot button{background:none;border:0;color:var(--blue);font-size:10px;font-weight:700;cursor:pointer}.serviceband{background:#dfe5e7;padding:45px 0}.servicegrid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.servicegrid article{border-top:3px solid var(--blue);padding-top:18px}.servicegrid h3{font:600 22px "Barlow Condensed",sans-serif;margin:0 0 7px}.servicegrid p{font-size:11px;line-height:1.8;color:#61707a}.contact{background:var(--dark);color:white;padding:50px;display:grid;grid-template-columns:.8fr 1fr;gap:45px}.contact h2{font:700 50px/.95 "Barlow Condensed",sans-serif;margin:15px 0}.contact p{font-size:12px;line-height:1.8;color:#bec7cf}.form{display:grid;grid-template-columns:1fr 1fr;gap:10px}.form input,.form select,.form textarea{width:100%;background:#1c2939;border:1px solid #4a5968;color:white;padding:14px;font-size:11px}.form textarea{grid-column:1/-1}.form button{grid-column:1/-1}.status{grid-column:1/-1;color:#b7c7ff;font:10px "IBM Plex Mono",monospace;min-height:15px}.footer{padding:25px 0;display:flex;justify-content:space-between;gap:20px;color:#77838b;font:9px "IBM Plex Mono",monospace}.disclaimer{font-size:10px;color:#87939a}@media(max-width:850px){.shell{width:calc(100% - 36px)}.hero{grid-template-columns:1fr}.hero-copy{padding:55px 28px 45px}.hero-image{min-height:370px}.navlinks{display:none}.navright{display:none}.grid{grid-template-columns:1fr 1fr}.contact{grid-template-columns:1fr}.section{padding:65px 0}}@media(max-width:560px){.shell{width:calc(100% - 28px)}.hero h1{font-size:57px}.hero-image{min-height:280px}.specstrip{grid-template-columns:1fr 1fr}.specstrip div{padding:14px}.grid,.servicegrid{grid-template-columns:1fr}.sectionhead{display:block}.sectionhead h2{font-size:44px}.contact{padding:28px}.form{grid-template-columns:1fr}.form textarea,.form button,.status{grid-column:auto}.footer{display:block;line-height:2.2}}
+</style></head><body><header class="top"><div class="shell nav"><a class="logo" href="#top">METALL<i>WERK</i><small>ENGINEERING / EQUIPMENT</small></a><nav class="navlinks"><a href="#catalog">Каталог</a><a href="#service">Сервис</a><a href="#contacts">Подбор</a></nav><div class="navright">ТЕХНИЧЕСКАЯ ЛИНИЯ <b>+7 800 000-00-00</b></div></div></header>
+<main id="top"><section class="hero"><div class="hero-copy"><div class="kicker">МЕТАЛЛООБРАБОТКА / 2026</div><h1>Точность<br>заложена<br><em>в конструкции.</em></h1><p>Станки и технологические решения для цехов, производственных линий и инженерных задач. Подбираем конфигурацию под материал, допуск и плановую загрузку.</p><a class="btn" href="#catalog">ОТКРЫТЬ КАТАЛОГ ↗</a></div><div class="hero-image"><img src="assets/cnc-workshop.jpg" alt="Обрабатывающий станок с ЧПУ в производственном цехе"><span class="hero-stamp">CNC SYSTEMS / SERIES 2026</span></div></section>
+<div class="specstrip"><div><strong>01 / ЧПУ</strong><small>УПРАВЛЯЕМОЕ ПРОИЗВОДСТВО</small></div><div><strong>02 / ТОЧНОСТЬ</strong><small>ПОДБОР ПОД ДОПУСК</small></div><div><strong>03 / ЗАПУСК</strong><small>ОСНАСТКА И НАЛАДКА</small></div><div><strong>04 / СЕРВИС</strong><small>ПОДДЕРЖКА ОБОРУДОВАНИЯ</small></div></div>
+<section class="shell section" id="catalog"><div class="sectionhead"><div><div class="kicker2">CATALOGUE / MACHINE TOOLS</div><h2>Оборудование<br>для вашего процесса.</h2></div><p>Категории и параметры в этой демонстрации показывают структуру каталога. Технические характеристики, модели и наличие должны быть подтверждены производителем перед публикацией.</p></div><div class="catalog-tools"><div class="filters" id="filters"><button class="filter active" data-kind="all">Все позиции</button><button class="filter" data-kind="mill">Фрезерные</button><button class="filter" data-kind="turn">Токарные</button><button class="filter" data-kind="laser">Лазерная резка</button></div><input class="search" id="search" type="search" placeholder="Поиск по каталогу…"></div>
+<div class="grid" id="machines"><article class="machine" data-kind="mill" data-search="фрезерный центр чпу vmc 850"><div class="machine-art"><span>MW / MILLING 001</span></div><div class="machine-body"><span class="tag">ФРЕЗЕРНЫЕ ЦЕНТРЫ</span><h3>VMC 850 / 3 AXIS</h3><p>Вертикальный обрабатывающий центр для точной обработки корпусных деталей.</p><div class="specs"><div>РАБОЧИЙ СТОЛ<b>1000 × 500 мм</b></div><div>ОСИ<b>3 / CNC</b></div></div><div class="machine-foot"><strong>Цена по запросу</strong><button data-product="VMC 850 / 3 AXIS">ЗАПРОСИТЬ ↗</button></div></div></article><article class="machine" data-kind="turn" data-search="токарный станок cnc t 400"><div class="machine-art"><span>MW / TURNING 002</span></div><div class="machine-body"><span class="tag">ТОКАРНЫЕ СТАНКИ</span><h3>T 400 / CNC</h3><p>Токарная обработка валов, втулок и деталей вращения в серийном цикле.</p><div class="specs"><div>ПАТРОН<b>Ø 250 мм</b></div><div>УПРАВЛЕНИЕ<b>CNC</b></div></div><div class="machine-foot"><strong>Цена по запросу</strong><button data-product="T 400 / CNC">ЗАПРОСИТЬ ↗</button></div></div></article><article class="machine" data-kind="laser" data-search="лазерная резка fiber 3015"><div class="machine-art"><span>MW / LASER 003</span></div><div class="machine-body"><span class="tag">ЛАЗЕРНАЯ РЕЗКА</span><h3>FIBER 3015</h3><p>Раскрой листового металла с подбором источника и конфигурации под задачу.</p><div class="specs"><div>ФОРМАТ<b>3000 × 1500 мм</b></div><div>ИСТОЧНИК<b>FIBER</b></div></div><div class="machine-foot"><strong>Цена по запросу</strong><button data-product="FIBER 3015">ЗАПРОСИТЬ ↗</button></div></div></article><article class="machine" data-kind="mill" data-search="пятиосевой центр 5 axis"><div class="machine-art"><span>MW / MILLING 004</span></div><div class="machine-body"><span class="tag">ОБРАБАТЫВАЮЩИЕ ЦЕНТРЫ</span><h3>5 AXIS / PRO</h3><p>Многоосевая обработка сложной геометрии и деталей с несколькими установами.</p><div class="specs"><div>ОСИ<b>5</b></div><div>ПРИМЕНЕНИЕ<b>COMPLEX PARTS</b></div></div><div class="machine-foot"><strong>Цена по запросу</strong><button data-product="5 AXIS / PRO">ЗАПРОСИТЬ ↗</button></div></div></article><article class="machine" data-kind="turn" data-search="токарный центр compact 250"><div class="machine-art"><span>MW / TURNING 005</span></div><div class="machine-body"><span class="tag">КОМПАКТНЫЕ РЕШЕНИЯ</span><h3>COMPACT 250</h3><p>Универсальная конфигурация для мелкосерийного производства и мастерских.</p><div class="specs"><div>ФОРМАТ<b>COMPACT</b></div><div>ЦИКЛ<b>SMALL BATCH</b></div></div><div class="machine-foot"><strong>Цена по запросу</strong><button data-product="COMPACT 250">ЗАПРОСИТЬ ↗</button></div></div></article><article class="machine" data-kind="laser" data-search="лазерная резка tube 6000"><div class="machine-art"><span>MW / LASER 006</span></div><div class="machine-body"><span class="tag">ОБРАБОТКА ТРУБ</span><h3>TUBE 6000</h3><p>Раскрой труб и профильного проката под серийные производственные задачи.</p><div class="specs"><div>ДЛИНА<b>ДО 6000 ММ</b></div><div>ПРОФИЛЬ<b>TUBE / SECTION</b></div></div><div class="machine-foot"><strong>Цена по запросу</strong><button data-product="TUBE 6000">ЗАПРОСИТЬ ↗</button></div></div></article></div><p id="empty" hidden style="font-size:12px;color:#69757d;padding:20px 0">По этому запросу ничего не найдено. Попробуйте изменить фильтр.</p></section>
+<section class="serviceband" id="service"><div class="shell"><div class="sectionhead"><div><div class="kicker2">ENGINEERING SUPPORT</div><h2>Не только поставка.</h2></div><p>От консультации по технологии до ввода оборудования в работу — один маршрут с понятными точками контроля.</p></div><div class="servicegrid"><article><h3>Подбор технологии</h3><p>Разбираем материал, геометрию детали, объём партии и требования к поверхности.</p></article><article><h3>Оснастка и запуск</h3><p>Согласуем комплектацию, подготовку площадки и план пусконаладочных работ.</p></article><article><h3>Техническая поддержка</h3><p>Помогаем выстроить обслуживание и обеспечить доступность расходных материалов.</p></article></div></div></section>
+<section class="shell section" id="contacts"><div class="contact"><div><div class="kicker">REQUEST / ENGINEERING</div><h2>Опишите<br>производственную<br>задачу.</h2><p>Укажите материал, тип детали и желаемую производительность. Форма демонстрационная, реальная отправка требует подключения CRM или почты.</p></div><form class="form" id="quote"><input name="name" required placeholder="Компания / контактное лицо"><input name="contact" required placeholder="Телефон или e-mail"><select id="machine" name="machine"><option value="">Категория оборудования</option><option>VMC 850 / 3 AXIS</option><option>T 400 / CNC</option><option>FIBER 3015</option><option>5 AXIS / PRO</option><option>COMPACT 250</option><option>TUBE 6000</option></select><input name="material" placeholder="Материал / тип детали"><textarea name="task" rows="3" placeholder="Кратко о задаче"></textarea><button class="btn" type="submit">ОТПРАВИТЬ ЗАПРОС ↗</button><div class="status" id="formstatus" role="status">DEMO FORM / НЕ ОТПРАВЛЯЕТ ДАННЫЕ</div></form></div></section></main><footer class="shell footer"><span>METALLWERK / INDUSTRIAL EQUIPMENT</span><span class="disclaimer">Демонстрационный каталог. Модели и спецификации условные.</span><a href="#top">НАВЕРХ ↑</a></footer>
+<script>
+const filters=[...document.querySelectorAll('.filter')],cards=[...document.querySelectorAll('.machine')],search=document.getElementById('search');let kind='all';function apply(){let term=search.value.toLowerCase().trim(),shown=0;cards.forEach(card=>{let ok=(kind==='all'||card.dataset.kind===kind)&&card.dataset.search.includes(term);card.hidden=!ok;if(ok)shown++});document.getElementById('empty').hidden=shown>0}filters.forEach(b=>b.addEventListener('click',()=>{filters.forEach(x=>x.classList.toggle('active',x===b));kind=b.dataset.kind;apply()}));search.addEventListener('input',apply);document.querySelectorAll('[data-product]').forEach(b=>b.addEventListener('click',()=>{document.getElementById('machine').value=b.dataset.product;document.getElementById('contacts').scrollIntoView({behavior:'smooth'})}));document.getElementById('quote').addEventListener('submit',e=>{e.preventDefault();document.getElementById('formstatus').textContent='Данные заполнены. Для приёма обращений подключите CRM или почту.'});
+</script></body></html>
